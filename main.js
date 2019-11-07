@@ -1,5 +1,5 @@
 function share(){
-    url = window.location.pathname
+    url = window.location.host + window.location.pathname
     url += "?masc="+encodeURI(document.getElementById("masc").value)
     url += "&androg="+encodeURI(document.getElementById("androg").value)
     url += "&fem="+encodeURI(document.getElementById("fem").value)
