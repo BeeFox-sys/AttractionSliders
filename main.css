@@ -1,0 +1,103 @@
+
+.block{
+    align-items: center;
+    height: 80vmin;
+    width: 100%;
+    background: #eeeeee;
+    border-radius: 30px;
+    padding: 3%;
+    max-width: 600px;
+    display:flex;
+    flex-direction: column;
+    min-width: 260px;
+}
+@media only screen and (max-width: 550px) {
+    .block {
+        height: 100%;
+        width: 100%;
+
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box;         /* Opera/IE 8+ */
+    }
+  }
+.button{
+    align-self: end;
+    border: 2px #888 solid;
+    border-radius: 15px;
+    padding:4px 10px;
+    cursor: pointer;
+    margin-top:4px
+}
+.center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 100%;
+    width: 100%;
+}
+.slider{
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    display: block;
+    width: 95%;
+    height: 6%;
+    margin: 2% 0;
+    background: #eee;
+    border: 2px #888 solid;
+    border-radius: 15px;
+    padding: 0 2.5%
+}
+.slider::-webkit-slider-thumb {
+    z-index: 2;
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #888; /* Green background */
+    cursor: e-resize; /* Cursor on hover */
+}
+.slider::-moz-range-thumb {
+    z-index: 100;
+    width: 5px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    border: none;
+    background: #888; /* Green background */
+    cursor: e-resize;
+}
+.slidertext{
+    font-family: 'Roboto', sans-serif;
+    color:#222;
+    display: block;
+    line-height: 0.6;
+    padding-left: 2.5%;
+}
+#fem{
+      background: linear-gradient(to left, #ff6262, #f000 95%);
+}
+#androg{
+    background: linear-gradient(to left, #85dd75, #f000 95%);
+}
+#masc{
+    background: linear-gradient(to left, #6294ff, #f000 95%);
+}
+#textbox{
+    display: block;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    border-radius: 30px;
+    border: 2px #888 solid;
+    padding: 3%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+#body{
+    height: 97vh;
+    background: #444;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box; 
+    margin:0;
+}

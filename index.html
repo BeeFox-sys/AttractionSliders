@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="ie=edge" http-equiv="X-UA-Compatible">
+        <link href="main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet"> 
+        <script src="main.js"></script>
+        <title>Attraction Sliders</title>
+    </head>
+    <body id=body onload="onload()">
+        <div class="center">
+            <div class="block">
+                <span class="slidertext">MASCULINE ATTRACTION</span><input class="slider"id="masc" max="255" min="0" type="range">
+                <span class="slidertext">ANDROGYNOUS ATTRACTION</span><input class="slider"id="androg" max="255" min="0" type="range">
+                <span class="slidertext">FEMININE ATTRACTION</span><input class="slider"id="fem" max="255" min="0" type="range">
+                <span class="slidertext" style="line-height: inherit; margin-top: -1.8%;">FURTHER EXPLINATION</span><textarea id="textbox"></textarea>
+                <input type="button" value="Share (Copy url to clipboard)" onclick="share()" class=button>
+            </div>
+        </div>
+    </body>
+</html>
